@@ -7,7 +7,7 @@ class UserService{
 
     findUserID(username){
 
-        const url = '/api/v1/user/' + username;
+        const url = 'https://appcent-todo-backend.herokuapp.com/api/v1/user/' + username;
         const config = {
             headers: { Authorization: `${sessionStorage.getItem("token")}`}
         }
