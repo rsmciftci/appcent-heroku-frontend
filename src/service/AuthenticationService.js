@@ -9,7 +9,7 @@ class AuthenticationService{
             password: password
         }
 
-        const url = 'auth/login';
+        const url = 'https://appcent-todo-backend.herokuapp.com/auth/login';
 
         return axios.post(url, data);
     }
