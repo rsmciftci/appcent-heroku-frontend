@@ -38,7 +38,7 @@ class RegisterPage extends Component {
 
         };
 
-        axios.post("http://localhost:8080/auth/register",customer).then(response =>{
+        axios.post("/auth/register",customer).then(response =>{
             if(response.status === 201){
                 this.setState(this.initialState);
                 alert("Customer Saved Successfully");
